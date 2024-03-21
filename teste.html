@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+
+        function handleSubmit(e) {
+            e.preventDefault();
+
+            // Read the form data
+            const form = e.target;
+            const formData = new FormData(form);
+            const formJson = Object.fromEntries(formData.entries());
+            console.log(formJson);
+        }
+
+        function App() {
+            return (
+                <form onSubmit={handleSubmit}>
+                    <input name="inpute" />
+                    <button type="submit">submit</button>
+                </form>
+            );
+        }
+
+
+
+
+
+        const container = document.getElementById('mydiv');
+        const root = ReactDOM.createRoot(container);
+        root.render(<App />);
+    </script>
+
+
+
+</body>
+
+</html>
