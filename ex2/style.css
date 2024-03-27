@@ -98,3 +98,11 @@ button:active {
     transition: all 200ms ease;
     transform: translateY(2px);
 }
+
+.output {
+    background-color: white;
+    border: 1px solid #777;
+    padding: 10px;
+    width: 100%;
+    max-width: 310px;
+}
