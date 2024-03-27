@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:azure;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header {
+    background-color:cadetblue;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header > button {
+    background-color: azure;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.ex {
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.interact {
+    background-color: azure;
+    padding: 25px 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.interact > input {
+    padding: 5px;
+    border-radius: 999px;
+    border: 1px solid #777;
+    text-indent: 5px;
+}
+
+.interact > button {
+    color: azure;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background-color: cadetblue;
+    border: none;
+}
+
+input:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button {
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transition: all 200ms ease;
+    transform: translateY(-1px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button:active {
+    transition: all 200ms ease;
+    transform: translateY(2px);
+}
+
+.output {
+    background-color: white;
+    border: 1px solid #777;
+    padding: 10px;
+    width: 100%;
+    max-width: 310px;
+}
+
+select {
+    padding: 3px;
+    border-radius: 999px;
+    text-indent: 1px;
+}
